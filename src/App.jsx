@@ -8,7 +8,8 @@ function App() {
       <div className="card">
         <h1 className="title">TodoList</h1>
         <form  className="form">
-          <input type="text" required placeholder="Add todo" />
+          <input type="text" required placeholder="Add todo......" />
+          <button></button>
         </form>
       </div>
    </div>
