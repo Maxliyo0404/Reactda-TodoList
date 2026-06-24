@@ -9,7 +9,7 @@ function App() {
         <h1 className="title">TodoList</h1>
         <form  className="form">
           <input type="text" required placeholder="Add todo......" />
-          <button></button>
+          <button type="submit" className="btn"> Submit</button>
         </form>
       </div>
    </div>
