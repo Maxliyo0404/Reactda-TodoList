@@ -6,7 +6,7 @@ function App() {
    <>
    <div className="cards">
       <div className="card">
-        
+        <h1 className="title"></h1>
       </div>
    </div>
    
