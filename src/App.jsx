@@ -4,8 +4,8 @@ import React, { useState } from 'react'
 function App() {
   const [todo, setTodo] = useState("");
   const [task, setTask] = useState([]);
-  const Addtodo = (()=>){
-
+  const addTask = ()=>{
+  
   }
   return (
    <>
