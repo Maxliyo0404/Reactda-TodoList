@@ -19,7 +19,9 @@ function App() {
       </div>
       <ul className="list">
         {(e.map()=>()) }
-        <li className="item"></li>
+        <li className="item">
+          
+        </li>
       </ul>
    </div>
    
