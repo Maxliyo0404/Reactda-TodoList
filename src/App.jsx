@@ -20,7 +20,9 @@ function App() {
         </form>
       </div>
       <ul className="list">
-        {task()}
+        {task.map((el,index)=>(
+
+        ))}
         <li className="item">
           
         </li>
