@@ -1,7 +1,8 @@
 import "./App.css";
-import React from 'react'
+import React, { useState } from 'react'
 
 function App() {
+  const [todo, setTodo] = useState("");
   return (
    <>
    <div className="cards">
