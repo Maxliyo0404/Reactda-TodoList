@@ -5,7 +5,7 @@ function App() {
   const [todo, setTodo] = useState("");
   const [task, setTask] = useState([]);
   const addTask = ()=>{
-  if ()
+  if (task.trim() === "")
   }
   return (
    <>
