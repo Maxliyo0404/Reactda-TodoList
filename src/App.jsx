@@ -20,7 +20,7 @@ function App() {
         </form>
       </div>
       <ul className="list">
-        
+        {task()}
         <li className="item">
           
         </li>
