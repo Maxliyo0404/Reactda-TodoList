@@ -21,11 +21,11 @@ function App() {
       </div>
       <ul className="list">
         {task.map((el,index)=>(
-
-        ))}
-        <li className="item">
+ <li className="item">
           
         </li>
+        ))}
+       
       </ul>
    </div>
    
