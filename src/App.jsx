@@ -17,7 +17,9 @@ function App() {
           <button type="submit" className="btn" onClick={}> Submit</button>
         </form>
       </div>
-      <ul className="list"></ul>
+      <ul className="list">
+        {(e.map()=>) }
+      </ul>
    </div>
    
    </>
