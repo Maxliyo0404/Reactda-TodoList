@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 
 function App() {
   const [todo, setTodo] = useState("");
+  const [task, setTask] = useState([]);
   return (
    <>
    <div className="cards">
