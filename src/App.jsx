@@ -16,11 +16,11 @@ function App() {
         <h1 className="title">TodoList</h1>
         <form  className="form">
           <input value={name} onChange={(e)=>setTodo(e.target.value)} type="text" required placeholder="Add todo......" />
-          <button type="submit" className="btn" onClick={}> Submit</button>
+          <button type="submit" className="btn" onClick={addTask}> Submit</button>
         </form>
       </div>
       <ul className="list">
-        {(e.map()=>()) }
+        
         <li className="item">
           
         </li>
