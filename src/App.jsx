@@ -18,7 +18,7 @@ function App() {
         </form>
       </div>
       <ul className="list">
-        {(e.map()=>) }
+        {(e.map()=>()) }
       </ul>
    </div>
    
