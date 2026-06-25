@@ -1,4 +1,5 @@
 import "./App.css";
+import Todo from "./Todo/Todo";
 import React, { useState } from 'react'
 
 function App() {
@@ -35,7 +36,7 @@ function App() {
        
       </ul>
    </div>
-   
+   <Todo/>
    </>
   )
 }
