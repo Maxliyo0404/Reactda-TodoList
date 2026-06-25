@@ -14,6 +14,7 @@ function App() {
     const newDelete = task.filter((_, i)=> i !== index);
     setTask(newDelete);
   }
+  const editBtn = (index)
   return (
    <>
    <div className="cards">
