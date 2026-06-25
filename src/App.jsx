@@ -11,7 +11,7 @@ function App() {
   }
   }
   const deleteBtn = (index) =>{
-    const
+    const newDelete = task.filter((_, i)=> i !== index);
     setTask()
   }
   return (
