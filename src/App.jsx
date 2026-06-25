@@ -5,9 +5,14 @@ function App() {
 const [todo, setTodo] = useState("");
 const [task, setTask] = useState([]);
 const addTodo = ()=>{
-  if  (todo.trim() !== "")
-    setTask([...task, todo]);
-   setTodo("");
+  if  (todo.trim() !== ""){
+   setTask([...task, todo])
+   setTodo("")
+  }
+}
+const deleteBtn = (index)=>{
+  const newBtn = task.filter((_, i)=> i !== index)
+  setTask(newBtn)
 }
 return(
   <>
@@ -19,6 +24,14 @@ return(
         <button type="submit" onClick={addTodo}>Submit</button>
       </form>
     </div>
+    <ul>
+      {task.map((el, index)=>(
+        <li key={index}>
+          {el}
+          <button className="btn" onClick={()=>deleteBtn(index)}>delete</button>
+        </li>
+      ))}
+    </ul>
   </div>
   </>
 )
