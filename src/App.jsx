@@ -3,9 +3,11 @@ import React, { useState } from 'react'
 
 function App() {
 const [todo, setTodo] = useState("");
-const [task, setTodo] = useState([]);
+const [task, setTask] = useState([]);
 const addTodo = ()=>{
-  if
+  if  (todo.trim() !== "")
+    setTask([...task, todo]);
+   setTodo("");
 }
 return(
   <>
