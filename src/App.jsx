@@ -20,6 +20,7 @@ const [editValue, setEditValue] = useState("");
     setIsEditing(index);
     setEditValue(text)
   }
+  const 
   return (
    <>
    <div className="cards">
@@ -27,7 +28,7 @@ const [editValue, setEditValue] = useState("");
         <h1 className="title">TodoList</h1>
         <form  className="form">
           <input value={todo} onChange={(e)=>setTodo(e.target.value)} type="text" required placeholder="Add todo......" />
-          <button type="submit" className="btn" onClick={addTask}> Submit</button>
+          <button type="submit" className="btn" onClick={addTask}>✅ Save</button>
         </form>
       </div>
       <ul className="list">
