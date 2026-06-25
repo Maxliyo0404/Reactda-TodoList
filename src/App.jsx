@@ -7,9 +7,10 @@ function App() {
   const addTask = ()=>{
   if (todo.trim() !== ""){
     setTask([...task, todo])
-    setTodo()
+    setTodo("")
   }
   }
+  const
   return (
    <>
    <div className="cards">
