@@ -35,7 +35,7 @@ function App() {
        
       </ul>
    </div>
-   <Todo/>
+
    </>
   )
 }
