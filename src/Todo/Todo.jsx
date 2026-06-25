@@ -11,12 +11,18 @@ function Todo() {
         } 
     }
   return (
+    <div className="boxs">
     <div className="box">
         <h1>TodoAdd</h1>
         <form  className="form">
          <input onChange={(e)=>setTodo(e.target.value)} value={todo}  type="text"required placeholder="Your name....." />
-         <button className="btn" type="submit" onClick={()=>}>Send</button>
+         <button className="btn" type="submit" onClick={()=>addList}>Send</button>
         </form>
+        </div>
+        <ul className="list">
+            {list.map((el, index)=>)
+            }
+        </ul>
     </div>
   )
 }
