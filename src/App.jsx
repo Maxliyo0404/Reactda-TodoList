@@ -27,6 +27,7 @@ function App() {
         {task.map((el, index)=>(
          <li key={index} className="item">
            {el}
+           <button className="btn2" type="submit">🗑 Delete</button>
         </li>
         ))}
        
