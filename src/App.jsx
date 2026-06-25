@@ -5,7 +5,7 @@ function App() {
   const [todo, setTodo] = useState("");
   const [task, setTask] = useState([]);
   const addTask = ()=>{
-  if (task.trim() !== ""){
+  if (todo.trim() !== ""){
     setTask([...task, todo])
   }
   }
@@ -22,7 +22,7 @@ function App() {
       <ul className="list">
         {task.map((el, index)=>(
          <li key={index} className="item">
-           
+           {el}
         </li>
         ))}
        
