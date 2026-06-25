@@ -29,6 +29,7 @@ function App() {
          <li key={index} className="item">
            {el}
            <button className="btn2" type="submit" onClick={()=>deleteBtn(index)}>🗑 Delete</button>
+           <button></button>
         </li>
         ))}
        
