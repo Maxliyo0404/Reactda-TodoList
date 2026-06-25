@@ -16,7 +16,7 @@ function App() {
       <div className="card">
         <h1 className="title">TodoList</h1>
         <form  className="form">
-          <input value={name} onChange={(e)=>setTodo(e.target.value)} type="text" required placeholder="Add todo......" />
+          <input value={todo} onChange={(e)=>setTodo(e.target.value)} type="text" required placeholder="Add todo......" />
           <button type="submit" className="btn" onClick={addTask}> Submit</button>
         </form>
       </div>
