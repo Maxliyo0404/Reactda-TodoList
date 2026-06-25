@@ -2,10 +2,16 @@ import "./Todo.css";
 import React, { useState } from 'react'
 
 function Todo() {
-    const [list, setList] = useState("");
-    const 
+    const [todo, setTodo] = useState("");
+    const [list, setList] = useState([]);
+    
   return (
-    <div>Todo</div>
+    <div className="box">
+        <h1>TodoAdd</h1>
+        <form  className="form">
+         <input type="text"required placeholder="Your name....." />
+        </form>
+    </div>
   )
 }
 
