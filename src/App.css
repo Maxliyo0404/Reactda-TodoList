@@ -45,8 +45,6 @@ body {
   border-radius: 6px;
   cursor: pointer;
 }
-
-/* List (Ro'yxat) uslubi */
 .list {
   list-style: none;
   padding: 0;
@@ -63,9 +61,7 @@ body {
   border: 1px solid #eee;
   gap: 10px;
 }
-
-/* Tugmalar */
-.delete-btn, .edit-btn {
+.delete-btn{
   padding: 6px 10px;
   border: none;
   border-radius: 4px;
@@ -74,9 +70,7 @@ body {
 }
 
 .delete-btn { background-color: #ff4d4d; color: white; }
-.edit-btn { background-color: #007bff; color: white; }
 
-/* Responsive (Mobil uchun) */
 @media (max-width: 480px) {
   .cards {
     padding: 15px;
@@ -84,7 +78,7 @@ body {
   }
   
   .item {
-    flex-wrap: wrap; /* Agar ekran juda kichik bo'lsa, tugmalar pastga tushadi */
+    flex-wrap: wrap; 
     justify-content: center;
   }
 }
