@@ -33,7 +33,7 @@ function App() {
          <li key={index} className="item">
            {el}
            <button className="delete-btn" type="submit" onClick={()=>deleteBtn(index)}>🗑 Delete</button>
-           <button className="edit-btn" type="submit" onClick={()=>}> 🖊 Edit</button>
+           <button className="edit-btn" type="submit" onClick={()=>editBtn(index)}> 🖊 Edit</button>
         </li>
         ))}
        
