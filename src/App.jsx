@@ -4,15 +4,17 @@ import React, { useState } from 'react'
 function App() {
   const [todo, setTodo] = useState("");
   const [task, setTask] = useState([]);
+  const [isEditing, setIsEditing] = useState(null); 
+const [editValue, setEditValue] = useState("");   
   const addTask = ()=>{
   if (todo.trim() !== ""){
     setTask([...task, todo])
     setTodo("")
   }
   }
-  const deleteBtn = (index) =>{
-    const newDelete = task.filter((_, i)=> i !== index);
-    setTask(newDelete);
+  const deleteBtn = (index, text) =>{
+    setIsEditing(index)
+    setEditValue(text)
   }
   const editBtn = (index) =>{
     const newEdit = task.filter((_, e)=> e !== index);
