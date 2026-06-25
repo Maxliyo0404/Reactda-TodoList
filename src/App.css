@@ -1,4 +1,91 @@
-.cards{
-    max-width: 100%;
-    background: greenyellow;
+
+/* Asosiy umumiy uslublar */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.cards {
+  width: 100%;
+  max-width: 450px; /* Kattaligi cheklangan */
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form uslubi */
+.form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.form input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* List (Ro'yxat) uslubi */
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  border: 1px solid #eee;
+  gap: 10px;
+}
+
+/* Tugmalar */
+.delete-btn, .edit-btn {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.delete-btn { background-color: #ff4d4d; color: white; }
+.edit-btn { background-color: #007bff; color: white; }
+
+/* Responsive (Mobil uchun) */
+@media (max-width: 480px) {
+  .cards {
+    padding: 15px;
+    margin: 0 10px;
+  }
+  
+  .item {
+    flex-wrap: wrap; /* Agar ekran juda kichik bo'lsa, tugmalar pastga tushadi */
+    justify-content: center;
+  }
 }
