@@ -9,7 +9,8 @@ function Todo() {
     <div className="box">
         <h1>TodoAdd</h1>
         <form  className="form">
-         <input type="text"required placeholder="Your name....." />
+         <input value={todo}  type="text"required placeholder="Your name....." />
+         <button className="btn" type="submit" onClick={()=>}>Send</button>
         </form>
     </div>
   )
