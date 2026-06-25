@@ -10,7 +10,8 @@ function App() {
     setTodo("")
   }
   }
-  const deleteBtn =()=>{
+  const deleteBtn = (index) =>{
+    const
     setTask()
   }
   return (
