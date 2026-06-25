@@ -5,7 +5,11 @@ function App() {
 
 return(
   <>
-  
+  <div className="card">
+    <div className="box">
+      <h1>TodoList</h1>
+    </div>
+  </div>
   </>
 )
 
