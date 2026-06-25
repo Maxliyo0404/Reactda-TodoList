@@ -12,13 +12,13 @@ const [editValue, setEditValue] = useState("");
     setTodo("")
   }
   }
-  const deleteBtn = (index, text) =>{
-    setIsEditing(index)
-    setEditValue(text)
+  const deleteBtn = (index) =>{
+    const newDelete = task.filter((_, i)=> i !== index);
+    setTask(newDelete);
   }
-  const editBtn = (index) =>{
-    const newEdit = task.filter((_, e)=> e !== index);
-    setTask(newEdit);
+  const starEdit = (index, text) =>{
+    setIsEditing(index);
+    setEditValue(text)
   }
   return (
    <>
@@ -35,7 +35,7 @@ const [editValue, setEditValue] = useState("");
          <li key={index} className="item">
            {el}
            <button className="delete-btn" type="submit" onClick={()=>deleteBtn(index)}>🗑 Delete</button>
-           <button className="edit-btn" type="submit" onClick={()=>editBtn(index)}> 🖊 Edit</button>
+           <button className="edit-btn" type="submit" onClick={()=>starEdit(index, el)}> 🖊 Edit</button>
         </li>
         ))}
        
