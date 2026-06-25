@@ -10,7 +10,7 @@ function App() {
     setTodo("")
   }
   }
-  const addBtn =()=>{
+  const deleteBtn =()=>{
     setTask()
   }
   return (
@@ -27,7 +27,7 @@ function App() {
         {task.map((el, index)=>(
          <li key={index} className="item">
            {el}
-           <button className="btn2" type="submit" onClick={addBtn()=>}>🗑 Delete</button>
+           <button className="btn2" type="submit" onClick={()=>deleteBtn}>🗑 Delete</button>
         </li>
         ))}
        
