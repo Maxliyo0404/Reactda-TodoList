@@ -14,7 +14,10 @@ function App() {
     const newDelete = task.filter((_, i)=> i !== index);
     setTask(newDelete);
   }
-  const editBtn = (index)
+  const editBtn = (index) =>{
+    const newEdit = task.filter((_, e)=> e !== index);
+    setTask(newEdit);
+  }
   return (
    <>
    <div className="cards">
