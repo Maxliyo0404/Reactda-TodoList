@@ -10,7 +10,9 @@ function App() {
     setTodo("")
   }
   }
-  const
+  const addBtn =()=>{
+    setTask()
+  }
   return (
    <>
    <div className="cards">
