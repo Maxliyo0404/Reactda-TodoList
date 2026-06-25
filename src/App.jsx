@@ -28,8 +28,8 @@ function App() {
         {task.map((el, index)=>(
          <li key={index} className="item">
            {el}
-           <button className="btn2" type="submit" onClick={()=>deleteBtn(index)}>🗑 Delete</button>
-           <button></button>
+           <button className="delete-btn" type="submit" onClick={()=>deleteBtn(index)}>🗑 Delete</button>
+           <button className="edit-btn" type="submit" onClick={()=>}> 🖊 Edit</button>
         </li>
         ))}
        
