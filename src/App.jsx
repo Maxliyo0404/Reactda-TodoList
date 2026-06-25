@@ -4,8 +4,6 @@ import React, { useState } from 'react'
 function App() {
   const [todo, setTodo] = useState("");
   const [task, setTask] = useState([]);
-  const [isEditing, setIsEditing] = useState(null); 
-const [editValue, setEditValue] = useState("");   
   const addTask = ()=>{
   if (todo.trim() !== ""){
     setTask([...task, todo])
@@ -16,11 +14,7 @@ const [editValue, setEditValue] = useState("");
     const newDelete = task.filter((_, i)=> i !== index);
     setTask(newDelete);
   }
-  const starEdit = (index, text) =>{
-    setIsEditing(index);
-    setEditValue(text)
-  }
-  const 
+ 
   return (
    <>
    <div className="cards">
@@ -36,7 +30,6 @@ const [editValue, setEditValue] = useState("");
          <li key={index} className="item">
            {el}
            <button className="delete-btn" type="submit" onClick={()=>deleteBtn(index)}>🗑 Delete</button>
-           <button className="edit-btn" type="submit" onClick={()=>starEdit(index, el)}> 🖊 Edit</button>
         </li>
         ))}
        
