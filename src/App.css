@@ -5,16 +5,21 @@ body {
   background-color: green;
   display: flex;
   justify-content: center;
+  align-items: flex-start; 
+  min-height: 100vh;      
+  margin: 0;              
   padding-top: 50px;
 }
 
 .cards {
-  width: 100%;
+  width: 90%;
   max-width: 450px; 
   background: white;
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin:  0 auto;
+  margin-top: 100px;
 }
 
 .title {
@@ -72,13 +77,14 @@ body {
 .delete-btn { background-color: #ff4d4d; color: white; }
 
 @media (max-width: 480px) {
-  .cards {
-    padding: 15px;
-    margin: 0 10px;
+  body {
+    padding-top: 20px;
   }
   
-  .item {
-    flex-wrap: wrap; 
-    justify-content: center;
+  .cards {
+    padding: 15px;
+    width: 95%;        
   }
+  
+
 }
