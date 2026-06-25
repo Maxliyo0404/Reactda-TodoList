@@ -7,6 +7,7 @@ function App() {
   const addTask = ()=>{
   if (todo.trim() !== ""){
     setTask([...task, todo])
+    setTodo()
   }
   }
   return (
