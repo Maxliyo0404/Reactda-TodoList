@@ -9,7 +9,8 @@ return(
     <div className="box">
       <h1>TodoList</h1>
       <form >
-        <input type="text"required placeholder="Add todo....." />
+        <input value={todo} onChange={()=> } type="text"required placeholder="Add todo....." />
+        <button type="submit" onClick={}>Submit</button>
       </form>
     </div>
   </div>
