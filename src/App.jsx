@@ -4,34 +4,13 @@ import React, { useState } from 'react'
 function App() {
 const [todo, setTodo] = useState("");
 const [task, setTask] = useState([]);
-const addTodo = ()=>{
-  if  (todo.trim() !== ""){
-   setTask([...task, todo])
-   setTodo("")
-  }
-}
-const deleteBtn = (index)=>{
-  const newBtn = task.filter((_, i)=> i !== index)
-  setTask(newBtn)
-}
+
 return(
   <>
-  <div className="card">
-    <div className="box">
-      <h1>TodoList</h1>
-      <form >
-        <input value={todo} onChange={(e)=>setTodo(e.target.value) } type="text"required placeholder="Add todo....." />
-        <button type="submit" onClick={addTodo}>Submit</button>
-      </form>
+  <div className="cards">
+    <div className="card">
+      <h1></h1>
     </div>
-    <ul>
-      {task.map((el, index)=>(
-        <li key={index}>
-          {el}
-          <button className="btn" onClick={()=>deleteBtn(index)}>delete</button>
-        </li>
-      ))}
-    </ul>
   </div>
   </>
 )
