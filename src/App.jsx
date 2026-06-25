@@ -15,8 +15,8 @@ return(
     <div className="box">
       <h1>TodoList</h1>
       <form >
-        <input value={todo} onChange={()=> } type="text"required placeholder="Add todo....." />
-        <button type="submit" onClick={}>Submit</button>
+        <input value={todo} onChange={(e)=>setTodo(e.target.value) } type="text"required placeholder="Add todo....." />
+        <button type="submit" onClick={addTodo}>Submit</button>
       </form>
     </div>
   </div>
