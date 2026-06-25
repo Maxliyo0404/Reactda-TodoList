@@ -3,6 +3,10 @@ import React, { useState } from 'react'
 
 function App() {
 const [todo, setTodo] = useState("");
+const [task, setTodo] = useState([]);
+const addTodo = ()=>{
+  if
+}
 return(
   <>
   <div className="card">
